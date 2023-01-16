@@ -1,0 +1,36 @@
+form {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input, textarea {
+    width: 100%;
+    resize: none;
+}
+aside {
+    line-height: 1.65;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 320px;
+    direction: ltr;
+    font-feature-settings: "kern";
+}
+aside h2 {
+    font-size: 4rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+aside h3 {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    text-align: left;
+    font-weight: 400;
+}
+@media screen and (max-width: 600px) {
+	aside h2, aside h3 {
+        text-align: center;
+    }
+}

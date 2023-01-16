@@ -1,0 +1,40 @@
+.gradient-text {
+    background: linear-gradient(90deg, #000, #000, #000, #000, #ffa500, #d140d6, #1d4ed8, #67e8f9, #000, #000, #000);
+    background-size: 400%;
+    animation: text-gradient 8s linear infinite reverse;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    background-clip: text;
+      text-fill-color: transparent;
+      color: #fff
+   }   
+@keyframes text-gradient {
+    0% {
+      background-position: 0%;
+  }
+  33% {
+      background-position: 0% 50%;
+  }
+  66% {
+      background-position: 50% 100%;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
+.download a:hover {
+    text-decoration: none;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .gradient-text {
+    background: linear-gradient(90deg, #fff, #fff, #fff, #fff, #ffa500, #d140d6, #1d4ed8, #67e8f9, #fff, #fff, #fff);
+    background-size:400%;
+    animation: text-gradient 8s linear infinite reverse;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    background-clip: text;
+      text-fill-color: transparent;
+      color: #fff
+    }
+}
+  

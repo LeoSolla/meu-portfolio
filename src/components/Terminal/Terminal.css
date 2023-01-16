@@ -1,0 +1,493 @@
+.slider_box{
+    margin:  0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+.slider_box_left{
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    height: 50%;
+    margin-right: 7%;
+    width: 28%;
+}
+.slider_box_left h2{
+    font-size: 3rem;
+    line-height: 1;
+}
+.slider_box_right{
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 2.5rem;
+    box-shadow: var(--box-shadow-2);
+    width: 30%;
+}
+.slider_box_left_creator{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.slider_box_left_creator_profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.slider_box_left_creator_profile_img{
+    border-radius: 50%;
+}
+.slider_box_left_logo {
+    border-radius: 50%;
+}
+.slider_box_left_creator_profile_info p{
+    margin-bottom: -.7rem;
+    margin-top: 1rem;
+}
+.slider_box_left_creator_collection{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.slider_box_left_creator_collection_icon{
+    font-size: 4rem;
+}
+.slider_box_left_company {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -.05em;
+    margin: 0 0 8px;
+    font-family: "ff-meta-web-pro","PT Sans","Lucida Grande","Lucida Sans","Lucida",Verdana,"Droid Sans",sans-serif;
+}
+.slider_box_left_bidding_box{
+    border: 3px solid var(--shadow-dark-color);
+    margin-block: 2rem;
+    padding: 0 1rem;
+    border-radius: .5rem;
+}
+.slider_box_left_bidding_text {
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    margin-bottom: 5%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8696a0;
+    text-align: left;
+}
+.slider_box_left_bidding_box_auction{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.slider_box_left_bidding_box small{
+    background-color: var(--shadow-dark-color);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-weight: 600;
+}
+.slider_box_left_bidding_box_icon{
+    font-size: 2rem;
+}
+.slider_box_left_bidding_box_timer{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    padding: 1rem 0rem 3rem 0;
+    border-bottom:  1px solid var(--shadow-dark-color);
+}
+.slider_box_left_bidding_box_timer_item p{
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 0;
+}
+.slider_box_left_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-block: 2rem 0rem;
+}
+.slider_box_left_sliderBtn{
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+    justify-content: center;
+}
+.slider_box_left_sliderBtn_icon{
+    cursor: pointer;
+    transition:  all .3s ease-in;
+}
+.slider_box_left_sliderBtn_icon:hover{
+    background-color: var(--shadow-dark-color);
+    border-radius: 50%;
+    padding: 1rem;
+}
+.slider_box_right_box{
+    position: relative;
+}
+.slider_box_right_box_img{
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  vertical-align: middle;
+}
+.slider_box_right_box_like{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--icons-color);
+    color: var(--shadow-dark-color);
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+}
+@media screen and (max-width: 600px) {
+    .slider_box{
+        width: 90%;
+        padding-top: 23rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .slider_box_left{
+        grid-column: 1 / 6;
+        height: auto;
+        padding: 1.5rem;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .slider_box_right{
+        margin-top: -70rem;
+    }
+    .slider_box_left_creator{
+        gap: 1rem;
+        grid-template-columns: 1.8fr 1fr;
+    }
+    .slider_box_left_creator_profile_info{
+        font-size: .8rem;
+        line-height: 1;
+    }
+    .slider_box_left_creator_collection_icon{
+        font-size: 1.5rem;
+    }
+    .slider_box_left_creator_collection_info{
+        font-size: .8rem;
+    }
+    .slider_box_left_bidding_box_timer{
+        gap: 2rem;
+    }
+    .slider_box_left_bidding_box_timer_item p{
+        font-size: 1rem;
+    }
+    .stats { 
+        flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-direction: column;
+    }
+}
+.terminal {
+    font-family: "Source Code Pro", Monaco, "Courier New", monospace;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    position: relative;
+    margin: 0 auto;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  @media screen and (min-width:30rem) {
+    .terminal {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+  }
+  @media screen and (min-width:60.5rem) {
+    .terminal {
+      max-width: 60.5rem
+    }
+  }
+  .terminal__task_bar {
+    height: 2rem;
+    padding-left: 0.5rem;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    text-align: left;
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
+  @media screen and (max-width:30rem) {
+    .terminal__task_bar {
+      padding-top: .5rem
+    }
+  }
+  .terminal__window {
+    height: 17.5rem;
+    padding: 1.5rem;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-color: #fff;
+    text-align: left;
+  }
+  .terminal__window_highlight {
+    color: #51e05d
+  }
+  .terminal__window_link {
+    color: #0091eb
+  }
+  .terminal__circle {
+    position: relative;
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    --tw-bg-opacity: 1;
+    background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+    vertical-align: middle;
+  }
+  .terminal__prompt_checkout,
+  .terminal__prompt_mail,
+  .terminal__prompt_show-contact {
+    opacity: 0
+  }
+  .terminal__prompt_label {
+    opacity: 1;
+  }
+  .label {
+    margin-left: 7%;
+    color: rgb(196, 0, 196);
+  }
+  .terminal__prompt_checkout {
+    animation: show-checkout 6s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  .terminal__prompt_show_contact {
+    animation: show-show-contact 6s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  .terminal__prompt_mail {
+    animation: show-mail 6s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  .terminal__prompt_typing {
+    position: relative
+  }
+  .terminal__prompt_typing .cover {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    background: #fff;
+    border-left: 1px solid #000
+  }
+  .terminal__prompt_typing .cover_gimme_dev {
+    animation: typing-gimme-dev 6s steps(19, end);
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  .terminal__prompt_typing .cover_show_contact {
+    animation: typing-show-contact 6s steps(19, end);
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  .dots{
+    display: flex;
+    margin-right: 28%;
+  }
+  .browser_input{
+    width: 31%;
+    background: #fafafa;
+    border-radius: 3px;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+  }
+  .browser_url {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .browser_lock{
+    display: inline-flex;
+    color: #29bc9b;
+  }
+  .browser_url_disable {
+    white-space: nowrap;
+    line-height: 1.25rem;
+    font-size: .75rem;
+    margin: 0 8px;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .browser_refresh{
+    display: inline-flex;
+  }
+  .browser_refresh > svg {
+    vertical-align: middle;
+  }
+  @keyframes typing-gimme-dev {
+    0% {
+      width: 100%;
+      opacity: 1
+    }
+    12% {
+      width: 0
+    }
+    15% {
+      opacity: 1
+    }
+    16% {
+      opacity: 0
+    }
+    100% {
+      opacity: 0
+    }
+  }
+
+  @keyframes typing-show-contact {
+    0%,
+    35% {
+      width: 100%
+    }
+    100%,
+    47% {
+      width: 0
+    }
+    48% {
+      opacity: 1
+    }
+    49% {
+      opacity: 0
+    }
+    100% {
+      opacity: 0
+    }
+  }
+  @keyframes show-checkout {
+    0%,
+    20% {
+      opacity: 0
+    }
+    100%,
+    25% {
+      opacity: 1
+    }
+  }
+  @keyframes show-mail {
+    0%,
+    55% {
+      opacity: 0
+    }
+    100%,
+    60% {
+      opacity: 1
+    }
+  }
+  @keyframes show-uploaded {
+    0%,
+    63% {
+      opacity: 0
+    }
+    100%,
+    68% {
+      opacity: 1
+    }
+  }
+
+  @keyframes show-show-contact {
+    0%,
+    28% {
+      opacity: 0
+    }
+    100%,
+    32% {
+      opacity: 1
+    }
+  }
+  a:active,
+  a:focus,
+  a:hover {
+    color: #0091eb;
+    text-decoration: underline
+  }
+  @keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards
+}
+.animatedFadeInUp {
+    opacity: 0
+}
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+.browser {
+  animation-delay: 4s;
+}
+@media (prefers-color-scheme: dark) {
+  .terminal__window {
+    background-color: #000;
+    color: #fff;
+  }
+  .terminal__prompt_typing .cover {
+    background: #000;
+    border-left: 1px solid #fff;
+  }
+}
+@media only screen and (max-width: 1366px) {
+    .terminal__window {
+      font-size: 14px;
+    }
+    .terminal__task_bar {
+      padding-top: 0;
+  }
+}

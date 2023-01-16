@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
+
+.ship_section_stats {
+  background: #fafafa;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+}
+.statistics {
+  margin: 0 auto;
+  max-width: calc(1200px + calc(2*24px));
+  padding: 24px 0;
+  background-color: transparent;
+}
+.stats {
+  display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+  align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;  
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.stats_item {
+  border-right: 1px solid #eaeaea;
+  padding: 0 33px;
+  flex-grow: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;  
+  text-align: center;
+}
+.stats_item .highlight {
+  font-size: calc(58px + (60 - 58)*((100vw - 500px)/(1440 - 320)));
+    font-size: -webkit-calc(58px + (60 - 58)*((100vw - 500px)/(1440 - 320)));
+    font-size: -moz-calc(58px + (60 - 58)*((100vw - 500px)/(1440 - 320)));  
+  line-height: 1.14em;
+  letter-spacing: -.05em;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+.stats_item .description {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #888;
+}
+.stats_item:last-child {
+  border-right: none;
+}
+@media screen and (max-width: 600px) {
+  .stats { 
+    flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;      
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .ship_section_stats {
+    background: #202c33;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    color: #fafafa;
+  }
+  .stats_item .highlight {
+    color: #fafafa;
+  }
+  .stats_item {
+    border-right: 0;
+    margin-bottom: 2rem;
+  }
+}
